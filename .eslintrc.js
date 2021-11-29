@@ -4,14 +4,18 @@ module.exports = {
     node: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    '@vue/standard'
+    "plugin:vue/vue3-essential",
+    "@vue/standard"
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: "babel-eslint"
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    quotes: ["error", "double"],
+    semi: ["error", "always"],
+    "comma-dangle": ["error", "only-multiline"],
+    "space-before-function-paren": ["error", "never"]
   }
-}
+};
